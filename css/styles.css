@@ -614,7 +614,7 @@ a.expand {
 }
 
 #appCopy {
-	max-width: 65%;
+	max-width: 63%;
     margin-left: 7%;
 }
 
@@ -819,7 +819,15 @@ footer p {
 	    padding: 3% 4% 4% 0;
 	}
 
+  /* section titles */
+	.sectionTitleBox {
+		max-width: 150px;
+		margin: 5px auto;
+	}
 
+	.sectionTitleBox h5 {
+		font-size: 15px;
+	}
 
   /* tasting wine touts */
 	.tout {
@@ -915,7 +923,7 @@ footer p {
   /* pairing touts */
 	.pairingTout h2 {
 		font-size: 36px;
-		padding: 20% 0;
+		padding: 15% 0;
 		background-color: rgba(0, 0, 0, .5);
 	}
 	.pairingTout .dek {

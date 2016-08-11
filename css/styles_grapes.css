@@ -406,8 +406,8 @@ hr {
 
 
 /* LIGHTBOX */
-#mylightbox {
-	visibility: 0;
+.lightbox {
+	display: none;
 }
 
 
