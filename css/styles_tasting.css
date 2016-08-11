@@ -1,0 +1,29 @@
+/* ----- HERO ----- */
+
+#tastingHero {
+	background: url("../images/tasting_hero.jpg") left center no-repeat;
+	background-size: cover;
+}
+
+.comingSoon p {
+	font-size: 50px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+	padding: 4% 2%;
+	margin: 10% 0 35% 0;
+}
+
+.sectionTitleContainer.tasting {
+    left: 44%;
+}
+
+/**** media query ****/
+@media (max-width: 900px) {
+
+   /* hero */
+	#tastingHero {
+		height: 40vh;
+	}
+	

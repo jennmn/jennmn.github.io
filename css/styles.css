@@ -1,0 +1,938 @@
+//font-family: 'Rubik', sans-serif;
+//font-family: 'Quicksand', sans-serif;
+//font-family: 'Pridi', serif;
+
+/* ----- SETUP ----- */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/* ----- BASE STYLES ----- */
+
+#boundary {
+	background-color: #E9E9E9;
+}
+
+#container {
+	max-width: 1600px;
+	margin: 0 auto;
+	display: block;
+	background-color: white;
+    box-shadow: 0px 1px 8px rgba(0, 0, 10, .3);
+    position: relative;
+}
+
+.wrapper {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+body {
+	color: #4A4A4A;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Rubik', Arial, sans-serif;
+	font-weight: 300;
+	background-color: #FFFFFF;
+}
+
+button {
+	background-color: #B83A7F;
+	padding: 12px;
+	border: none;
+	margin: 0 auto;
+	display: block;
+	transition: all 0.3s ease 0s;
+}
+
+button a {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Rubik', arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	padding: 12px;
+}
+
+button:hover {
+	background-color: #871B56;
+}
+
+button:focus {
+	outline: 0;
+}
+
+.sectionTitleContainer {
+	padding-top: 5%;
+}
+
+.sectionTitleBox {
+	background-color: #FFFFFF;
+	border: 1px solid black;
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+.sectionTitleBox h5 {
+	color: black;
+	text-transform: uppercase;
+	padding: 3% 0% 2% 0%;
+	text-align: center;
+	letter-spacing: .5;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+
+/* ----- HEADER - Base Styles ----- */
+
+
+header h1 {
+	font-family: 'Quicksand', sans-serif;
+	color: #FFFFFF;
+	font-weight: lighter;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+header ul {
+	text-align: center;
+}
+
+header ul li {
+	display: inline-block;
+}
+
+header ul li a.standardNav {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin: 0px 15px 0px 15px;
+	padding-bottom: 2px;
+	position: relative;
+}
+
+header ul li a.standardNav:hover {
+	color: white;
+}
+
+header ul li a.standardNav:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #B83A7F;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+header ul li a.standardNav:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+
+/* ----- HEADER - LARGE ----- */
+
+.largeHeader {
+	background-color: #4E3862;
+	width: 100%;
+	/*overflow: hidden;*/
+	z-index: 9;
+}
+
+.large {
+	margin-top: 0px;
+}
+
+.largeHeader h1 {
+	font-size: 80px;
+	text-align: center;
+	margin: 0px;
+	padding: 15px 0px 0px 0px;
+	line-height: 1;
+}
+
+.largeHeader button {
+	background-color: #EDB23E;
+	position: absolute;
+    top: 27px;
+    right: 5%;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+	padding: 6px;
+}
+
+.largeHeader button a {
+	font-family: 'Pridi', serif;
+	color: white;
+	text-transform: none;
+	font-weight: 200;
+	font-size: 20px;
+}
+
+.largeHeader button:hover {
+	background-color: #E59800;
+}
+
+.largeHeader ul {
+	/*margin: 0 auto;*/
+	padding: 13px 0px 10px 0px;
+}
+
+
+/* ----- HEADER - FIXED ----- */
+
+.fixedHeader {
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color: #4E3862;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+    transition: all ease .5s;
+    z-index: 9;
+    max-width: 1600px;
+}
+
+.fixed {
+	margin-top: -150px;
+}
+
+.fixedHeader h1 {
+	font-size: 44px;
+	color: #FFFFFF;
+	padding-top: 15px;
+	margin-left: 3%;
+	padding: 0px;
+	float: left;
+}
+
+.fixedHeader nav {
+	float: right;
+}
+
+.fixedHeader ul {
+	padding: 12px 15px 10px 0px;
+}
+
+.fixedHeader ul li a.standardNav {
+    margin: 0px 0px 0px 20px;
+}
+
+.fixedHeader ul li.appButton {
+	background-color: #EDB23E;
+	padding: 6px 10px;
+	margin-left: 20px;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.fixedHeader ul li.appButton:hover {
+	background-color: #E59800;
+}
+
+.fixedHeader ul li a.appButton {
+	font-family: 'Pridi', serif;
+	color: white;
+	text-transform: none;
+	text-decoration: none;
+	font-weight: 200;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding: 2%;
+}
+
+
+/* ----- RESPONSIVE NAV ----- */
+
+#mobileNav {
+	/*float: right;*/
+	/*display: none;*/
+}
+
+.menuBtn, .menuBtn-fixed {
+	background: none;
+ 	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 45px;
+	padding: 7px 15px 0px 15px;
+	color: #fff;
+	border: 0;
+	font-size: 1.4em;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	display: none;
+	z-index: 11;
+}
+
+.responsiveMenu, .responsiveMenu-fixed {
+	display: none;
+	transition: all 0.3s ease 0s;
+	z-index: 5;
+}
+
+.responsiveMenu ul, .responsiveMenu-fixed ul {
+	background-color: rgba(255, 255, 255, 0.95);
+	text-align: left;
+	width: 200px;
+	box-shadow: 0px 1px 8px rgba(0, 0, 10, .3);
+	position: fixed;
+	z-index: 6;
+	left: 0;
+	padding: 13px 0px 0px 0px;
+}
+
+.responsiveMenu li, .responsiveMenu-fixed li {
+	display: block;
+	padding: 7% 3%;
+}
+
+.responsiveMenu a, .responsiveMenu-fixed a {
+	color: #311748;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0px 15px 0px 15px;
+	padding-bottom: 2px;
+	position: relative;
+}
+
+.responsiveMenu a:hover, .responsiveMenu-fixed a:hover {
+	color: #B83A7F;
+}
+
+.responsiveMenu ul li.appButton, .responsiveMenu-fixed ul li.appButton {
+	background-color: #EDB23E;
+	padding: 10px 15px;
+	margin-top: 4%;
+}
+
+.responsiveMenu ul li a.appButton, .responsiveMenu-fixed ul li a.appButton {
+	font-family: 'Pridi', serif;
+	color: white;
+	text-transform: none;
+	text-decoration: none;
+	font-weight: 200;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding-right: 18%;
+}
+
+
+/* ----- INTRO ----- */
+
+#intro {
+	margin: 0 auto;
+	max-width: 900px;
+	padding: 2%;
+}
+
+#intro h2 {
+	text-align: center;
+	font-family: 'Pridi', serif;
+	font-weight: 200;
+	font-size: 2.75em;
+	color: #4E3862;
+	letter-spacing: 1.5;
+	line-height: 1.1;
+	padding: 3% 0% 1% 0%;
+}
+
+#intro p {
+	text-align: center;
+	font-size: 1.15em;
+	line-height: 1.5;
+	color: black;
+	padding: 1% 0% 4% 0%;
+}
+
+
+/* ----- HERO TOUTS ----- */
+
+.toutsWrapper {
+	/* taking this out allows images to be full width of browwser
+	max-width: 1240px;*/
+	margin: 0 auto;
+}
+
+.heroTout {
+	padding: 0% 0%;
+	/*margin: 0px 0px 30px 0px;*/
+	display: inline-block;
+}
+
+.grapesTout {
+	background: url("../images/AboutGrapes_hpimage.jpg") left center no-repeat;
+	background-size: cover;
+	width: 50%;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.stylesTout {
+	background: url("../images/AboutStyles_hpimage.jpg") right center no-repeat;
+	background-size: cover;
+	width: 50%;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.icon {
+    display: block;
+    max-width: 23%;
+    margin: 0 auto;
+    padding: 10% 0 6% 0;
+}
+
+.grapesTitle, .stylesTitle {
+	font-family: 'Pridi', serif;
+    color: white;
+    letter-spacing: 2;
+    line-height: 26px;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, .6);
+    font-size: 5vw;
+    text-align: center;
+    padding: 1% 0 4% 0%;
+}
+
+.grapesDek, .stylesDek {
+	color: white;
+    font-size: 1.25vw;
+    font-family: 'Rubik', Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1;
+    line-height: 1.75;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, .6);
+    text-align: center;
+    padding: 2% 8% 4% 8%;
+	background: linear-gradient(bottom, rgba(0,0,0,.9), rgba(0,0,0,0));
+  	background: -webkit-linear-gradient(bottom, rgba(0,0,0,.9), rgba(0,0,0,0));
+  	background: -moz-linear-gradient(bottom, rgba(0,0,0,.9), rgba(0,0,0,0));
+  	-webkit-animation-duration: .5s;
+  	-moz-animation-duration: .5s;
+  	opacity: 0;
+}
+
+/* ----- TASTING ----- */
+
+#tastingWine {
+	background-color: #F5F5F5;
+	overflow: hidden;
+	width: 100%;
+	padding-bottom: 2%;
+}
+
+.toutContainer {
+	/*width: 100%;*/
+	padding: 2% 0%;
+}
+
+.tout {
+	width: 29%;
+	padding: 0% 2.25%;
+	border-right: 1px solid #cccccc;
+	margin: 0px 0px 30px 0px;
+	display: inline-block;
+	float: left;
+}
+
+.tout:last-child {
+	border: none;
+	padding-right: 0px;
+}
+
+.toutContainer h2 {
+	text-align: center;
+	font-family: 'Pridi', serif;
+	font-weight: 200;
+	font-size: 36px;
+	line-height: 1.15;
+	color: black;
+	padding: 0px 0px 10px 0px;
+}
+
+.tout p {
+	padding: 0px 0px 15px 0px;
+	text-align: center;
+}
+
+
+/* ----- PAIRING ----- */
+
+#pairingFood {
+	background-color: #F5F5F5;
+	overflow: hidden;
+	width: 100%;
+	padding-bottom: 5%;
+}
+
+.pairingTout {
+	margin: 0% 2% 4% 0%;
+	/*display: inline-block;*/
+}
+
+.pairingTout:last-child {
+	margin-right: 0%;
+}
+
+.effects .img {
+  position: relative;
+  float: left;
+  margin-bottom: 5px;
+  width: 32%;
+  overflow: hidden;
+}
+
+.effects .img img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  -webkit-transition: all 0.65s;
+  -moz-transition: all 0.65s;
+  -o-transition: all 0.65s;
+  transition: all 0.65s;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+}
+
+a.expand {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  margin: 0 auto -30px auto;
+}
+
+.img.hover .overlay {
+  height: 100%;
+}
+
+.pairingTout h2 {
+	text-align: center;
+	font-family: 'Pridi', serif;
+	font-weight: 200;
+	font-size: 40px;
+	color: white;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, .75);
+	position: relative;
+	padding: 28% 0;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+.pairingTout .dek {
+	padding: 3% 10% 0% 10%;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .85);
+    position: relative;
+    display: none;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Rubik', Arial, sans-serif;
+	font-weight: 300;
+}
+
+.pairingTout .overlay p {
+	padding: 8% 6% 3% 6%;
+    font-family: 'Pridi', serif;
+    font-weight: 200;
+    letter-spacing: 1;
+    color: white;
+    text-align: center;
+    display: block;
+    line-height: 1.35;
+    font-size: 18px;
+}
+
+.overlayButton {
+	padding: 12px 6px;
+}
+
+.overlayButton a {
+	font-size: 14px;
+	padding: 12px;
+}
+
+/* ----- APP TOUT ----- */
+
+
+#appTout .appSection {
+	max-width: 900px;
+    margin: 0px auto;
+    padding: 6%;
+}
+
+#appTout .device {
+	max-width: 280px;
+	width: 30%
+}
+
+#appTout .appImage {
+	margin: 5% 5% 6% 0%;
+	max-width: 280px;
+	width: 100%;
+}
+
+#appCopy {
+	max-width: 65%;
+    margin-left: 7%;
+}
+
+#appTout h2 {
+	font-family: 'Pridi', serif;
+	font-weight: 200;
+	font-size: 38px;
+	color: black;
+	letter-spacing: 1.5;
+	line-height: 45px;
+	padding: 2% 0% 1% 0%;
+}
+
+#appTout p {
+	padding-top: 2%;
+}
+
+#appTout .bullets {
+	padding: 2% 0% 0% 4%;
+	line-height: 30px;
+}
+
+#appTout .appStoreBadge {
+	padding: 4% 0;
+}
+
+#appTout #textLink {
+	margin: 2% 0 0 0;
+}
+
+#appTout #textLink p {
+	font-weight: 500;
+	font-size: 14px;
+}
+
+#appTout #textLink input {
+	padding: 11px;
+	font-size: 14px;
+	margin-top: 2%
+}
+
+#appTout #textLink button {
+	display: inline-block;
+	margin: 2% 1%;
+}
+
+#alertBox {
+	font-size: 13px;
+	font-weight: 500;
+	padding: 2% 0;
+	opacity: 0;
+}
+
+#textLink input:focus {
+	outline: 0;
+}
+
+
+
+/* ----- FOOTER ----- */
+
+
+footer {
+	background-color: black;
+	width: 100%;
+	overflow: hidden;
+}
+
+footer p {
+	font-size: 13px;
+	letter-spacing: 1.5;
+	text-align: center;
+	color: white;
+	padding: 2% 0%;
+}
+
+
+
+
+/**** media query ****/
+@media (max-width: 1024px) {
+	.fixedHeader ul li.appButton {
+		display: none;
+	}
+	.fixedHeader ul {
+   		margin-top: 10px;
+	}
+	.largeHeader button {
+		display: none;
+	}
+	#appTout h2 {
+		font-size: 34px;
+	}
+
+  /* hero touts */
+  	.grapesDek, .stylesDek {
+	    font-size: 1.5vw;
+	    padding: 1% 6% 4% 6%;
+	    line-height: 1.5;
+	}
+
+  /* pairing touts */
+	.pairingTout .overlay p {
+		font-size: 16px;
+		line-height: 1.25;
+		padding: 8% 8% 4% 8%;
+	}
+}
+
+/**** media query ****/
+@media (max-width: 900px) {
+  /* header */
+	.menuBtn-fixed {
+		display: block;
+	}
+	.fixedHeader h1 {
+		font-size: 40px;
+		text-align: center;
+		float: none;
+	}
+	.fixedHeader nav {
+		display: none;
+	}
+	.fixedHeader {
+		height: inherit;
+	}
+	.fixedHeader ul {
+		margin: 0;
+	}
+	.fixedHeader ul li.appButton {
+		display: block;
+		margin: 0;
+	}
+
+  /* hero touts */
+  	.grapesDek, .stylesDek {
+	    font-size: 1.75vw;
+	    padding: 1% 4% 4% 4%;
+	}
+
+  /* pairing tout */
+	.pairingTout h2 {
+		font-size: 34px;
+		padding: 28% 0;
+	}
+	.pairingTout .overlay p {
+		font-size: 14px;
+	}
+
+  /* app tout */
+	#appCopy {
+    	max-width: 60%;
+	}
+	#appTout h2 {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	#appTout p {
+    	font-size: 16px;
+	}
+	#appTout #textlink p {
+    	font-size: 13px;
+	}
+}
+
+
+/**** media query ****/
+@media (max-width: 700px) {
+
+  /* header */
+	.largeHeader h1 {
+		font-size: 62px;
+		padding: 15px 0px 0px 0px;
+	}
+
+
+  /* intro */
+	#intro h2 {
+		font-size: 2.5em;
+		/*margin-top: 10%;*/
+	}
+	#intro p {
+		font-size: 18px;
+		padding: 2% 0% 3% 0%;
+	}
+
+  /* hero touts */
+	.grapesTout {
+		width: 100%; 
+	}
+	.stylesTout {
+		width: 100%; 
+	}
+	.icon {
+		max-width: 25%;
+	}
+	.grapesTitle, .stylesTitle {
+		font-size: 12vw;
+	}
+  	.grapesDek, .stylesDek {
+	    font-size: 2.75vw;
+	    padding: 3% 4% 4% 0;
+	}
+
+
+
+  /* tasting wine touts */
+	.tout {
+		width: 85%;
+    	border: none;
+    	display: block;
+    	margin: 0 auto 30px auto;
+    	float: none;
+	}
+	.toutContainer h2 {
+		padding: 0;
+	}
+	.toutContainer p {
+		padding: 12px 20px;
+	}
+
+
+  /* pairing touts */
+	.effects .img {
+		width: 85%;
+    	border: none;
+    	display: block;
+    	margin: 0 auto 10px auto;
+    	float: none;
+	}
+	.pairingTout h2 {
+		padding: 25% 0;
+		font-size: 44px;
+	}
+	.pairingTout:last-child {
+		margin: 0 auto 30px auto;
+	}
+	.pairingTout .overlay p {
+		font-size: 18px;
+		line-height: 1.5;
+		padding: 15% 8% 6% 8%;
+	}
+}
+
+
+/*********************************/
+@media (max-width: 560px) {
+
+  /* header */
+	.largeHeader {
+		position: fixed;
+		margin-bottom: 30px;
+		box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+	}
+	.largeHeader h1 {
+		font-size: 28px;
+		padding: 10px 0px;
+		text-align: center;
+	}
+	.fixedHeader {
+		display: none;
+	}
+	.fixedHeader .mobileNav {
+		display: none;
+	}
+	.responsiveMenu ul {
+		position: fixed;
+	}
+
+  /* large header responsive */
+	.menuBtn {
+		display: block;
+	    padding-top: 3px;
+	}
+	.largeHeader nav {
+		display: none;
+	}
+
+  /* fixed header responsive */
+	.fixedHeader h1 {
+		display: none;
+	}
+
+	.fixedHeader nav {
+		display: none;
+	}
+
+  /* intro */
+	#intro h2 {
+		font-size: 2.25em;
+		margin-top: 50px;
+	}
+	#intro p {
+		font-size: 16px;
+		padding: 2% 0% 3% 0%;
+	}
+
+  /* pairing touts */
+	.pairingTout h2 {
+		font-size: 36px;
+		padding: 20% 0;
+		background-color: rgba(0, 0, 0, .5);
+	}
+	.pairingTout .dek {
+		display: block;
+	}
+	.pairingTout .overlay p {
+		display: none;
+	}
+	.overlay {
+  		display: none;
+  	}
+
+  /* app tout */
+	#appTout .device {
+		display: none;
+	}
+	#appCopy {
+    	max-width: 90%;
+	}
+}

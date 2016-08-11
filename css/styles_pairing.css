@@ -1,0 +1,19 @@
+/* ----- HERO ----- */
+
+#pairingHero {
+	background: url("../images/pairings_hero.jpg") left center no-repeat;
+	background-size: cover;
+}
+
+.sectionTitleContainer.pairing {
+    left: 43%;
+}
+
+/**** media query ****/
+@media (max-width: 900px) {
+
+   /* hero */
+	#pairingHero {
+		height: 40vh;
+	}
+	

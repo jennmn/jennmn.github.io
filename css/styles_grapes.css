@@ -1,0 +1,523 @@
+/* ----- HEADER ----- */
+
+.secondaryHeader {
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color: #4E3862;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+    /*transition: all ease .5s;*/
+    z-index: 9;
+    max-width: 1600px;
+}
+
+.secondaryHeader h1 a {
+	font-size: 44px;
+	color: #FFFFFF;
+	padding-top: 15px;
+	margin-left: 3%;
+	padding: 0px;
+	float: left;
+	text-decoration: none;
+}
+
+.secondaryHeader nav {
+	float: right;
+}
+
+.secondaryHeader ul {
+	padding: 12px 15px 10px 0px;
+}
+
+header ul li a.navOn {
+	color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin: 0px 0px 0px 20px; 
+    padding-bottom: .5px;
+    position: relative;
+    border-bottom: 2px #B83A7F solid;
+}
+
+.secondaryHeader ul li a.standardNav {
+    margin: 0px 0px 0px 20px;
+}
+
+.secondaryHeader ul li.appButton {
+	background-color: #EDB23E;
+	padding: 6px 10px;
+	margin-left: 20px;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.secondaryHeader ul li.appButton:hover {
+	background-color: #E59800;
+}
+
+.secondaryHeader ul li a.appButton {
+	font-family: 'Pridi', serif;
+	color: white;
+	text-transform: none;
+	text-decoration: none;
+	font-weight: 200;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding: 2%;
+}
+
+
+/* ----- HERO ----- */
+
+#hero {
+	max-width: 100%;
+}
+
+.heroImg {
+	height: 55vh;
+	/*height: 450px;*/
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	transition: all ease .5s;
+}
+
+#grapesHero {
+	background: url("../images/grapes_hero.jpg") left center no-repeat;
+	background-size: cover;
+}
+
+.sectionTitleContainer {
+	vertical-align: baseline;
+	margin: 0 auto;
+	position: absolute;
+	top: 96%;
+	left: 46%;
+	padding: 0;
+	transition: all ease .5s;
+}
+
+.sectionTitleContainer h5 {
+	padding: 8px 20px 5px 20px;
+}
+
+
+/* ----- FILTER ----- */
+
+#filter {
+	width: 100%;
+	background-color: #F5F5F5;
+}
+
+#filterTypes {
+	margin: 0 auto;
+	padding: 4% 0% 2% 0%;
+}
+
+#filter ul {
+	text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+}
+
+#filter ul li {
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0px 15px 0px 15px;
+	position: relative;
+	cursor: pointer;
+}
+
+#filter ul li:hover {
+	color: #B83A7F;
+	border-bottom: 1px solid #B83A7F;
+}
+
+.filterSelected {
+	color: #B83A7F;
+	border-bottom: 1px solid #B83A7F;
+}
+
+
+/* ----- CARDS ----- */
+
+#cards {
+	background-color: #F5F5F5;
+	overflow: hidden;
+	width: 100%;
+	padding-bottom: 1%;
+	/*display: none;*/
+}
+
+/* MIX IT UP */
+/*#cards .mix {
+	display: none;
+}*/
+/* END */
+
+.cardContainer {
+	max-width: 30%;
+	margin: 0 1.5% 3% 1.5%;
+	display: inline-block;
+	/* MIX IT UP */
+/*	display:  none;*/
+	/* END*/
+	vertical-align: top;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 0px 1px 8px rgba(0, 0, 10, .3);
+	transition: all ease .5s;
+	/*float: left;*/
+}
+
+#albarino {
+	border-top: 14px solid #FAD393;
+}
+
+#barbera {
+	border-top: 14px solid #D45477;
+}
+
+#bonarda {
+	border-top: 14px solid #D14869;
+}
+
+#cabfranc {
+	border-top: 14px solid #CA3151;
+}
+
+#cabernet {
+	border-top: 14px solid #CD3C5C;
+}
+
+#carinena {
+	border-top: 14px solid #C62545;
+}
+
+#chardonnay {
+	border-top: 14px solid #F6C164;
+}
+
+#cheninBlanc {
+	border-top: 14px solid #F3B74B;
+}
+
+#corvina {
+	border-top: 14px solid #CA3151;
+}
+
+#dolcetto {
+	border-top: 14px solid #CD3C5C;
+}
+
+#fiano {
+	border-top: 14px solid #F8CA7C;
+}
+
+#gamay {
+	border-top: 14px solid #D45477;
+}
+
+#gewurtztraminer {
+	border-top: 14px solid #F8CA7C;
+}
+
+#godello {
+	border-top: 14px solid #F8CA7C;
+}
+
+#grenache {
+	border-top: 14px solid #CD3C5C;
+}
+
+#grenacheBlanc {
+	border-top: 14px solid #F6C164;
+}
+
+#gruner {
+	border-top: 14px solid #FCDCA9;
+}
+
+#lambrusco {
+	border-top: 14px solid #D14869;
+}
+
+#macabeo {
+	border-top: 14px solid #F8CA7C;
+}
+
+#malbec {
+	border-top: 14px solid #C62545;
+}
+
+#marsanne {
+	border-top: 14px solid #F3B74B;
+}
+
+#mencia {
+	border-top: 14px solid #CD3C5C;
+}
+
+#merlot {
+	border-top: 14px solid #CA3151;
+}
+
+#montepulciano {
+	border-top: 14px solid #CA3151;
+}
+
+#muscat {
+	border-top: 14px solid #FAD393;
+}
+
+#nebbiolo {
+	border-top: 14px solid #CD3C5C;
+}
+
+#nero {
+	border-top: 14px solid #D14869;
+}
+
+#petitVerdot {
+	border-top: 14px solid #C3153B;
+}
+
+#pinotBianco {
+	border-top: 14px solid #F6C164;
+}
+
+#pinotGrigio {
+	border-top: 14px solid #FAD393;
+}
+
+#pinotNoir {
+	border-top: 14px solid #D45477;
+}
+
+#prosecco {
+	border-top: 14px solid #FCDCA9;
+}
+
+#riesling {
+	border-top: 14px solid #F3B74B;
+}
+
+#sangiovese {
+	border-top: 14px solid #D14869;
+}
+
+#sauvignonBlanc {
+	border-top: 14px solid #FAD393;
+}
+
+#semillon {
+	border-top: 14px solid #F0AE30;
+}
+
+#syrah {
+	border-top: 14px solid #C3153B;
+}
+
+#torrontes {
+	border-top: 14px solid #F3B74B;
+}
+
+#vermentino {
+	border-top: 14px solid #F0AE30;
+}
+
+#viognier {
+	border-top: 14px solid #F6C164;
+}
+
+#zinfandel {
+	border-top: 14px solid #C3153B;
+}
+
+.grapeIcon {
+	max-width: 35%;
+	margin: 0 auto;
+	display: block;
+	padding: 5% 0% 2% 0%;
+}
+
+.cardContainer h2 {
+	font-family: 'Pridi', serif;
+	font-size: 33px;
+	text-align: center;
+	padding: 2% 3%;
+    line-height: 1;
+}
+
+.cardContainer h3 {
+	font-weight: 500;
+	font-size: 14px;
+	color: #9E9E9E;	
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1;
+}
+
+.cardContainer .related {
+	color: black;
+	padding: 1%;
+	font-size: 13px;
+}
+
+.cardContainer p {
+	padding: 5% 7%;
+    font-size: 14px;
+    color: #4A4A4A;
+}
+
+hr {
+	max-width: 85%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #cccccc, rgba(0, 0, 0, 0));
+}
+
+.simGrapeGroup {
+	/*float: left;*/
+    padding: 0% 0% 4% 3%;
+    max-width: 29%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.smallIcon {
+	max-width: 85%;
+	padding-bottom: 10px;
+}
+
+.cardContainer h5 {
+	font-family: 'Pridi', serif;
+	font-size: 13px;
+	text-align: center;
+	line-height: 1.25;
+}
+
+
+/* LIGHTBOX */
+#mylightbox {
+	visibility: 0;
+}
+
+
+/**** media query ****/
+@media (max-width: 1024px) {
+	.secondaryHeader ul li.appButton {
+		display: none;
+	}
+	.secondaryHeader ul {
+   		margin-top: 10px;
+	}
+}
+
+/**** media query ****/
+@media (max-width: 900px) {
+
+  /* header */	
+	.secondaryHeader h1 a {
+		font-size: 40px;
+		text-align: center;
+		float: none;
+		display: block;
+	}
+	.secondaryHeader nav {
+		display: none;
+	}
+	.secondaryHeader {
+		height: inherit;
+	}
+	.secondaryHeader ul {
+		margin: 0;
+		padding: 13px 0px 0px 0px;
+	}
+	.secondaryHeader ul li.appButton {
+		display: block;
+		margin: 0;
+		padding: 10px 15px;
+	}
+	.responsiveMenu-fixed a.mobileNavSelected {
+		color: #B83A7F;
+	}
+
+  /* hero */
+	#grapesHero {
+		height: 40vh;
+	}
+	.sectionTitleContainer {
+    	left: 44%;
+	}
+	.sectionTitleContainer h5 {
+		font-size: 16px;
+   		padding: 6px 15px 4px 15px;
+	}
+
+  /* filter */
+	#filterTypes {
+	    padding: 5% 0% 3% 0%;
+	}
+
+  /* cards */
+	.cardContainer {
+		max-width: 90%;
+		margin: 0 6% 4% 6%;
+		float: none;
+	}
+	.grapeIcon {
+	    max-width: 25%;
+	    padding: 3% 0% 0% 0%;
+	}
+	.smallIcon {
+		max-width: 45%;
+		padding-bottom: 10px;
+	}
+	.cardContainer h2 {
+	    font-size: 38px;
+	    padding: 2% 3% 1% 3%;
+	}
+	.cardContainer p {
+	    padding: 2% 7%;
+	    font-size: 15px;
+	}
+	.simGrapeGroup {
+	    float: left;
+	    padding: 1% 0% 2% 3%;
+	    max-width: 29%;
+	}
+}
+
+/*********************************/
+@media (max-width: 560px) {
+
+  /* fixed header responsive */
+	.secondaryHeader h1 a {
+		font-size: 28px;
+		padding: 3px 0px;
+		margin: 0px;
+		text-align: center;
+		float: none;
+	}
+	.menuBtn-fixed {
+		display: block;
+	    padding-top: 2.5px;
+	}
+	.sectionTitleContainer {
+	    left: 38%;
+	}
+
+  /* filter */
+	#filterTypes {
+	    padding: 8% 0% 4% 0%;
+	}
+}
+
