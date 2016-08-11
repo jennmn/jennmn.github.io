@@ -66,6 +66,10 @@
 
 		/* reset white-space wrapping */
 		white-space: normal;
+
+		/* additional styling for VA */
+		border-radius: 5px;
+		box-shadow: 0px 1px 8px rgba(0, 0, 10, .3);
 	}
 
 	/* contains the content */
@@ -78,8 +82,8 @@
 		/* position: centering vertical and horizontal */
 		position: absolute;
 		z-index: 9999;
-		top: 0;
-		right: 0;
+		top: 5;
+		right: 5;
 
 		/* dimensions: 25px x 25px */
 		line-height: 25px;

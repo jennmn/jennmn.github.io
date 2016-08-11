@@ -112,7 +112,7 @@ header ul li a.navOn {
 
 #filterTypes {
 	margin: 0 auto;
-	padding: 4% 0% 2% 0%;
+	padding: 50px 0 20px 0;
 }
 
 #filter ul {
@@ -177,7 +177,7 @@ header ul li a.navOn {
 	/*float: left;*/
 }
 
-#albarino {
+#albarino, .albarino {
 	border-top: 14px solid #FAD393;
 }
 
@@ -348,7 +348,7 @@ header ul li a.navOn {
 	padding: 5% 0% 2% 0%;
 }
 
-.cardContainer h2 {
+.cardContainer h2, .lightbox h2 {
 	font-family: 'Pridi', serif;
 	font-size: 33px;
 	text-align: center;
@@ -356,7 +356,7 @@ header ul li a.navOn {
     line-height: 1;
 }
 
-.cardContainer h3 {
+.cardContainer h3, .lightbox h3 {
 	font-weight: 500;
 	font-size: 14px;
 	color: #9E9E9E;	
@@ -371,10 +371,25 @@ header ul li a.navOn {
 	font-size: 13px;
 }
 
-.cardContainer p {
+.cardContainer p, .lightbox p {
 	padding: 5% 7%;
     font-size: 14px;
     color: #4A4A4A;
+}
+
+.cardContainer a {
+	text-decoration: none;
+	line-height: 2;
+	color: #B83A7F;
+	font-weight: 400;
+}
+
+.lightbox h2 {
+	padding: 1%;
+}
+
+.lightbox p {
+	padding: 2%;
 }
 
 hr {
@@ -456,6 +471,7 @@ hr {
 	}
 	.sectionTitleContainer {
     	left: 44%;
+    	top: 94%;
 	}
 	.sectionTitleContainer h5 {
 		font-size: 16px;
@@ -464,7 +480,7 @@ hr {
 
   /* filter */
 	#filterTypes {
-	    padding: 5% 0% 3% 0%;
+	    padding: 40px 0 20px 0;
 	}
 
   /* cards */
@@ -513,11 +529,12 @@ hr {
 	}
 	.sectionTitleContainer {
 	    left: 38%;
+	    top: 93%;
 	}
 
-  /* filter */
-	#filterTypes {
-	    padding: 8% 0% 4% 0%;
-	}
+/* cards */
+	.smallIcon {
+   		max-width: 65%;
+   	}
 }
 

@@ -81,7 +81,10 @@ $('.menuBtn-fixed').click(function(){
 
 // logo animation //
 $('.pulseAnimation').hover(function(){
-    $('.pulseAnimation').addClass('animated pulse');
+    $('.pulseAnimation').addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        function() {
+            $(this).removeClass('animated pulse');
+        });
 });
 
 
@@ -168,15 +171,6 @@ $(window).resize(function () {
 
 
 // --------------------- TEXT APP LINK---------------------- //
-
-// $('#textButton').click(function(){
-//     // alert('A link is on its way!');
-//     $('#alertBox')
-//         .css('opacity', '1')
-//         .css('color', 'red')
-//         // .html('Thank you. Check your phone for a download link.')
-//         .html('You did not enter a valid phone number.');
-// })
 
 function validatePhone(phoneNumber) {
     var a = document.getElementById(phoneNumber).value;
