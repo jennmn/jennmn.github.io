@@ -19,6 +19,9 @@
 	padding: 0px;
 	float: left;
 	text-decoration: none;
+	-webkit-animation-duration: 1.25s;
+	-moz-animation-duration: 1.25s;
+	animation-duration: 1.25s;
 }
 
 .secondaryHeader nav {
@@ -350,7 +353,7 @@ header ul li a.navOn {
 
 .cardContainer h2, .lightbox h2 {
 	font-family: 'Pridi', serif;
-	font-size: 33px;
+	font-size: 31px;
 	text-align: center;
 	padding: 2% 3%;
     line-height: 1;
@@ -386,6 +389,7 @@ header ul li a.navOn {
 
 .lightbox h2 {
 	padding: 1%;
+	font-size: 33px;
 }
 
 .lightbox p {
