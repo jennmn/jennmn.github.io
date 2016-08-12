@@ -475,7 +475,7 @@ hr {
 	}
 	.sectionTitleContainer {
     	left: 44%;
-    	top: 94%;
+    	top: 95%;
 	}
 	.sectionTitleContainer h5 {
 		font-size: 16px;
@@ -514,6 +514,14 @@ hr {
 	    padding: 1% 0% 2% 3%;
 	    max-width: 29%;
 	}
+
+ /* lightbox */
+   	.lightbox h2 {
+		padding: 3% 1% 2% 1%;
+	}
+	.lightbox h3 {
+		padding-bottom: 2%;
+	}
 }
 
 /*********************************/
@@ -533,10 +541,13 @@ hr {
 	}
 	.sectionTitleContainer {
 	    left: 38%;
-	    top: 93%;
+	    top: 95%;
 	}
+	/*.sectionTitleContainer h5 {
+		padding: 6px 10px 4px 10px;
+	}*/
 
-/* cards */
+  /* cards */
 	.smallIcon {
    		max-width: 65%;
    	}

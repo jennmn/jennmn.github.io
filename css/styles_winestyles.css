@@ -202,17 +202,10 @@
 	#stylesHero {
 		height: 40vh;
 	}
-	.sectionTitleContainer {
-    	left: 44%;
-	}
-	.sectionTitleContainer h5 {
-		font-size: 16px;
-   		padding: 6px 15px 4px 15px;
-	}
 
   /* filter */
 	#filterTypes {
-	    padding: 5% 0% 3% 0%;
+	    padding: 40px 0 20px 0;
 	}
 
   /* cards */
@@ -263,9 +256,5 @@
 	    left: 38%;
 	}
 
-  /* filter */
-	#filterTypes {
-	    padding: 8% 0% 4% 0%;
-	}
 }
 

@@ -17,3 +17,16 @@
 		height: 40vh;
 	}
 	
+	.sectionTitleContainer.pairing {
+    	left: 36%;
+	}
+}
+
+/**** media query ****/
+@media (max-width: 560px) {
+
+	.sectionTitleContainer.pairing {
+    	left: 29%;
+	}
+
+}
