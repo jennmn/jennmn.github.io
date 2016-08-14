@@ -1,0 +1,260 @@
+/* ----- HERO ----- */
+
+#stylesHero {
+	background: url("../images/styles_hero.jpg") left center no-repeat;
+	background-size: cover;
+}
+
+
+/* ----- FILTER ----- */
+
+#filter {
+	width: 100%;
+	background-color: #F5F5F5;
+}
+
+#filterTypes {
+	margin: 0 auto;
+	padding: 4% 0% 2% 0%;
+}
+
+#filter ul {
+	text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+}
+
+#filter ul li {
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0px 15px 0px 15px;
+	position: relative;
+	cursor: pointer;
+}
+
+#filter ul li:hover {
+	color: #B83A7F;
+	border-bottom: 1px solid #B83A7F;
+}
+
+.filterSelected {
+	color: #B83A7F;
+	border-bottom: 1px solid #B83A7F;
+}
+
+
+/* ----- CARDS ----- */
+
+#cards {
+	background-color: #F5F5F5;
+	overflow: hidden;
+	width: 100%;
+	padding-bottom: 1%;
+	/*display: none;*/
+}
+
+/* MIX IT UP */
+/*#cards .mix {
+	display: none;
+}*/
+/* END */
+
+.cardContainer {
+	max-width: 30%;
+	margin: 0px 0px 30px 30px;
+	display: inline-block;
+	/* MIX IT UP */
+/*	display:  none;*/
+	/* END*/
+	vertical-align: top;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 0px 1px 8px rgba(0, 0, 10, .3);
+	transition: all ease .5s;
+	/*float: left;*/
+}
+
+#barolo {
+	border-top: 14px solid #CD3C5C;
+}
+
+#beaujolais {
+	border-top: 14px solid #D45477;
+}
+
+#bordeaux {
+	border-top: 14px solid #CD3C5C;
+}
+
+#burgundyRed {
+	border-top: 14px solid #D45477;
+}
+
+#burgundyWhite {
+	border-top: 14px solid #F6C164;
+}
+
+#cava {
+	border-top: 14px solid #F8CA7C;
+}
+
+#chablis {
+	border-top: 14px solid #F6C164;
+}
+
+#champagne {
+	border-top: 14px solid #F6C164;
+}
+
+#chianti {
+	border-top: 14px solid #D14869;
+}
+
+#cotesRed {
+	border-top: 14px solid #C3153B;
+}
+
+#cotesWhite {
+	border-top: 14px solid #F0AE30;
+}
+
+#muscadet {
+	border-top: 14px solid #FCDCA9;
+}
+
+#port {
+	border-top: 14px solid #C3153B;
+}
+
+#fuisse {
+	border-top: 14px solid #F6C164;
+}
+
+#fume {
+	border-top: 14px solid #FAD393;
+}
+
+#rioja {
+	border-top: 14px solid #CA3151;
+}
+
+#sancerre {
+	border-top: 14px solid #FAD393;
+}
+
+#sherry {
+	border-top: 14px solid #EDA509;
+}
+
+#valpolicella {
+	border-top: 14px solid #CA3151;
+}
+
+
+
+
+/**** media query ****/
+@media (max-width: 1024px) {
+	.secondaryHeader ul li.appButton {
+		display: none;
+	}
+	.secondaryHeader ul {
+   		margin-top: 10px;
+	}
+}
+
+/**** media query ****/
+@media (max-width: 900px) {
+
+  /* header */	
+	.secondaryHeader h1 a {
+		font-size: 40px;
+		text-align: center;
+		float: none;
+		display: block;
+	}
+	.secondaryHeader nav {
+		display: none;
+	}
+	.secondaryHeader {
+		height: inherit;
+	}
+	.secondaryHeader ul {
+		margin: 0;
+		padding: 13px 0px 0px 0px;
+	}
+	.secondaryHeader ul li.appButton {
+		display: block;
+		margin: 0;
+		padding: 10px 15px;
+	}
+	.responsiveMenu-fixed a.mobileNavSelected {
+		color: #B83A7F;
+	}
+
+  /* hero */
+	#stylesHero {
+		height: 40vh;
+	}
+
+  /* filter */
+	#filterTypes {
+	    padding: 40px 0 20px 0;
+	}
+
+  /* cards */
+	.cardContainer {
+		max-width: 90%;
+		margin: 0 6% 4% 6%;
+		float: none;
+	}
+	.grapeIcon {
+	    max-width: 25%;
+	    padding: 3% 0% 0% 0%;
+	}
+	.smallIcon {
+		max-width: 45%;
+		padding-bottom: 10px;
+	}
+	.cardContainer h2 {
+	    font-size: 38px;
+	    padding: 2% 3% 1% 3%;
+	}
+	.cardContainer p {
+	    padding: 2% 7%;
+	    font-size: 15px;
+	}
+	.simGrapeGroup {
+	    float: left;
+	    padding: 1% 0% 2% 3%;
+	    max-width: 29%;
+	}
+}
+
+/*********************************/
+@media (max-width: 560px) {
+
+  /* fixed header responsive */
+	.secondaryHeader h1 a {
+		font-size: 28px;
+		padding: 3px 0px;
+		margin: 0px;
+		text-align: center;
+		float: none;
+	}
+	.menuBtn-fixed {
+		display: block;
+	    padding-top: 2.5px;
+	}
+	.sectionTitleContainer {
+	    left: 38%;
+	}
+
+}
+
