@@ -295,7 +295,7 @@ header ul li a.standardNav:hover:before {
 .responsiveMenu ul, .responsiveMenu-fixed ul {
 	background-color: rgba(255, 255, 255, 0.95);
 	text-align: left;
-	width: 200px;
+	width: 180px;
 	box-shadow: 0px 1px 8px rgba(0, 0, 10, .3);
 	position: fixed;
 	z-index: 6;
@@ -756,6 +756,11 @@ footer p {
 	    padding: 1% 4% 4% 4%;
 	}
 
+  /* tasting touts */
+	.toutContainer p {
+		font-size: 15px;
+	}
+
   /* pairing tout */
 	.pairingTout h2 {
 		font-size: 34px;
@@ -770,11 +775,11 @@ footer p {
     	max-width: 60%;
 	}
 	#appTout h2 {
-		font-size: 30px;
-		line-height: 36px;
+		font-size: 28px;
+    	line-height: 34px;
 	}
 	#appTout p {
-    	font-size: 16px;
+    	font-size: 15px;
 	}
 	#appTout #textlink p {
     	font-size: 13px;
