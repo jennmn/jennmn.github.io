@@ -388,12 +388,12 @@ header ul li a.navOn {
 }
 
 .lightbox h2 {
-	padding: 1%;
+	padding: 18px 0 10px 0;
 	font-size: 33px;
 }
 
 .lightbox p {
-	padding: 2%;
+	padding: 20px;
 }
 
 hr {
@@ -515,14 +515,6 @@ hr {
 	    max-width: 29%;
 	}
 
- /* lightbox */
-   	.lightbox h2 {
-		padding: 3% 1% 2% 1%;
-	}
-	.lightbox h3 {
-		padding-bottom: 2%;
-	}
-}
 
 /*********************************/
 @media (max-width: 560px) {
@@ -551,5 +543,11 @@ hr {
 	.smallIcon {
    		max-width: 65%;
    	}
+
+  /* lightbox */
+   	.lightbox p {
+		padding: 20px 10px;
+	}
+
 }
 

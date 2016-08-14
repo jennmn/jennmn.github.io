@@ -20,10 +20,10 @@ $(document).ready(function () {
           if($(document).scrollTop()>150){ 
             // console.log("scroll > 150")
             $('.fixedHeader').removeClass("fixed")
-            menuBtnFixedClicked = false;
+            // menuBtnFixedClicked = false;
           }else{    
             $('.fixedHeader').addClass("fixed")
-            $('.responsiveMenu-fixed').hide();
+            $('.mobileNav .responsiveMenu-fixed').hide();
         }
     });
 // }
@@ -32,14 +32,18 @@ $(document).ready(function () {
 
 // -- responsive nav -- //
 $(window).resize(function () {
-    if($(window).width() >= 700 ){
+    if($(window).width() >= 547 ){
         $('.responsiveMenu').hide();
+        menuBtnFixedClicked = false;
+        menuBtnClicked = false;
     }
-})
+});
 
 $(window).resize(function () {
     if($(window).width() >= 875 ){
         $('.responsiveMenu-fixed').hide();
+        menuBtnFixedClicked = false;
+        menuBtnClicked = false;
     }
 });
 
