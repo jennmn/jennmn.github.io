@@ -427,7 +427,7 @@ header ul li a.standardNav:hover:before {
     line-height: 1.75;
     text-shadow: 1px 1px 7px rgba(0, 0, 0, .6);
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     padding: 4% 8% 4% 8%;
 	background: linear-gradient(bottom, rgba(0,0,0,.9), rgba(0,0,0,0));
   	background: -webkit-linear-gradient(bottom, rgba(0,0,0,.9), rgba(0,0,0,0));
