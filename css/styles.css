@@ -420,7 +420,7 @@ header ul li a.standardNav:hover:before {
 
 .grapesDek, .stylesDek {
 	color: white;
-    font-size: 1.05vw;
+    font-size: 1.15vw;
     font-family: 'Rubik', Arial, sans-serif;
     font-weight: 300;
     letter-spacing: 1;
@@ -713,7 +713,7 @@ footer p {
 
   /* hero touts */
   	.grapesDek, .stylesDek {
-	    font-size: 1.5vw;
+	    font-size: 1.6vw;
 	    padding: 1% 6% 4% 6%;
 	    line-height: 1.5;
 	}
@@ -822,7 +822,7 @@ footer p {
 		font-size: 12vw;
 	}
   	.grapesDek, .stylesDek {
-	    font-size: 2.75vw;
+	    font-size: 3vw;
 	    padding: 3% 4% 4% 0;
 	}
 
